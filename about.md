@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-know a little about cloud computing and iot
+know a little about cloud computing
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+just for a little help for others...
 
 ### Contact me
 
