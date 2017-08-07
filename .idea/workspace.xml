@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b91f2d2d-54b0-4b4c-afd7-21af94f29492" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-7-31-helm.md" afterPath="$PROJECT_DIR$/_posts/2017-7-31-helm.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-7-21-minikube.md" afterPath="$PROJECT_DIR$/_posts/2017-7-21-minikube.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md" afterPath="$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-4-10-devstack.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-4-10-devstack.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-4-10-devstack.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -44,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="198">
-                <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
+              <first_editor relative-caret-position="701">
+                <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="28" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -53,12 +54,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-7-21-minikube.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017-7-21-minikube.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2017-7-21-minikube.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="882">
-                <caret line="49" column="90" lean-forward="false" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
+              <first_editor relative-caret-position="846">
+                <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="48" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -75,9 +76,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_posts/2017-7-5-socks5.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-7-21-minikube.md" />
         <option value="$PROJECT_DIR$/_posts/2017-7-31-helm.md" />
         <option value="$PROJECT_DIR$/_posts/2017-4-10-devstack.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-7-21-minikube.md" />
       </list>
     </option>
   </component>
@@ -385,28 +387,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-7-21-minikube.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="882">
-            <caret line="49" column="90" lean-forward="false" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-7-31-helm.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -418,11 +398,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-7-5-shadowsocks.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="701">
+            <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-4-10-devstack.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1548">
             <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="87" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-7-21-minikube.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="846">
+            <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="48" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />
