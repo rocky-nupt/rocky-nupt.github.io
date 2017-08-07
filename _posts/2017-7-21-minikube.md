@@ -24,7 +24,7 @@ minikube安装教程
     kvm                   593920  1 kvm_intel
 
 ### 翻墙
-见翻墙篇：<a href="http://rocky-nupt.github.io/socks5/">http://rocky-nupt.github.io/socks5/</a>
+见翻墙篇：<a href="http://rocky-nupt.github.io/shadowsocks/">http://rocky-nupt.github.io/shadowsocks/</a>
 
 ### 安装kubectl
     curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -50,4 +50,4 @@ minikube安装教程
 启动失败的话可以重启一下
 
 ### minikube中docker翻墙
-见翻墙篇：<a href="http://rocky-nupt.github.io/socks5/">http://rocky-nupt.github.io/socks5/</a>
+见翻墙篇：<a href="http://rocky-nupt.github.io/shadowsocks/">http://rocky-nupt.github.io/shadowsocks/</a>

@@ -84,6 +84,7 @@ devstack的详细安装过程。
     enable_service tempest
 
 执行安装：
+
     su stack
     /home/devstack/stack.sh
 
