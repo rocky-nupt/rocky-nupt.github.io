@@ -54,7 +54,7 @@ title: centos命令行使用shadowsocks代理
 
 ### docker设置http代理
 
-    mkdir -p /etc/systemd/system/docker.service.d<br />
+    mkdir -p /etc/systemd/system/docker.service.d
     vim /etc/systemd/system/docker.service.d/http-proxy.conf
 
     [Service]
