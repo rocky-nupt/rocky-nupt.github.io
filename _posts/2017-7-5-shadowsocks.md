@@ -12,6 +12,7 @@ title: centos命令行使用shadowsocks代理
     yum install epel-release
     yum install python-pip
     pip install shadowsocks
+    
 新建配置文件
 
     vim /etc/shadowsocks.json
@@ -45,7 +46,8 @@ title: centos命令行使用shadowsocks代理
     vim /etc/profile
     export http_proxy=http://127.0.0.1:8118
     export https_proxy=http://127.0.0.1:8118
-######
+
+
     source /etc/profile
 
 验证:
