@@ -41,6 +41,7 @@ title: centos命令行使用shadowsocks代理
 启动privoxy
 
     privoxy /etc/privoxy/config
+  
 配置环境变量
 
     vim /etc/profile
