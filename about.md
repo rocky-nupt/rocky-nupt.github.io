@@ -8,7 +8,7 @@ know a little about cloud computing
 
 ### More Information
 
-just for a little help for others...
+just for a little help to others...
 
 ### Contact me
 
