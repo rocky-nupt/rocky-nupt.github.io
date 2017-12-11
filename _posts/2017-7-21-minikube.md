@@ -27,8 +27,7 @@ minikube安装教程
 见翻墙篇：<a href="http://rocky-nupt.github.io/shadowsocks/">http://rocky-nupt.github.io/shadowsocks/</a>
 
 ### 安装kubectl
-    curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-    
+    curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl 
     chmod +x kubectl<br />
     mv kubectl /usr/local/bin
 
@@ -36,13 +35,14 @@ minikube安装教程
 
 先下docker-machine-driver-kvm插件：<br />
 
-    curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm -o /usr/local/bin/docker-machine-driver-kvm
-    
+
+    curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm -o /usr/local/bin/docker-machine-driver-kvm    
     chmod +x /usr/local/bin/docker-machine-driver-kvm
-    
+   
     yum install libvirt-daemon-kvm kvm
 
-再下minikube
+再下minikube <br />
+
 
     curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.21.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
