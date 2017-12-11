@@ -47,6 +47,7 @@ minikube安装教程
 
     minikube config set vm-driver kvm
     minikube start
+
 启动失败的话可以重启一下
 
 ### minikube中docker翻墙
