@@ -33,22 +33,20 @@ minikube安装教程
 
 ### 下载安装minikube
 
-先下docker-machine-driver-kvm插件：<br />
-
+先下docker-machine-driver-kvm插件：
 
     curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm -o /usr/local/bin/docker-machine-driver-kvm    
     chmod +x /usr/local/bin/docker-machine-driver-kvm
-   
     yum install libvirt-daemon-kvm kvm
 
-再下minikube <br />
-
+再下minikube 
 
     curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.21.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 
 ### 启动
-    minikube config set vm-driver kvm<br />
-    minikube start<br />
+
+    minikube config set vm-driver kvm
+    minikube start
 启动失败的话可以重启一下
 
 ### minikube中docker翻墙
