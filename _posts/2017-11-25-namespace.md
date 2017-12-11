@@ -7,14 +7,14 @@ title: namespace初探
 
 linux中namespace分为6中：<br />
 
-|namespace   |  系统调用参数       |隔离内容                              |
-|------------|:-------------------:|:------------------------------------:|
-|UTS         |  CLONE_NEWUTS       |主机名和域名                          |
-|IPC         |  CLONE_NEWIPC       |信号量、消息队列和共享内存            |
-|PID         |  CLONE_NEWPID       |进程编号                              |
-|Network     |  CLONE_NEWNET       |网络设备、网络栈、端口等等            |
-|Mount       |  CLONE_NEWNS        |挂载点（文件系统）                    |
-|User        |  CLONE_NEWUSER      |用户和用户组                          |
+|**namespace** |** 系统调用参数**    |**隔离内容**                          |
+|--------------|:--------------------|:------------------------------------:|
+|UTS           |  CLONE_NEWUTS       |主机名和域名                          |
+|IPC           |  CLONE_NEWIPC       |信号量、消息队列和共享内存            |
+|PID           |  CLONE_NEWPID       |进程编号                              |
+|Network       |  CLONE_NEWNET       |网络设备、网络栈、端口等等            |
+|Mount         |  CLONE_NEWNS        |挂载点（文件系统）                    |
+|User          |  CLONE_NEWUSER      |用户和用户组                          |
 
 
 namespace的API包括**clone()**、**setns()**以及**unshare()**，还有/proc下的部分文件。在使用这些API的时候，通常要指定上面六个参数中的一个或多个，通过 | （或）操作实现。<br />
