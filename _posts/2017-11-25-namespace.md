@@ -35,7 +35,7 @@ namespace的API包括**clone()**、**setns()**以及**unshare()**，还有/proc�
 4. 信号量：信号量是一个计数器，可以用来控制多个进程对共享资源的访问。通常可以作为一种锁机制，主要是进程间以及同一进程内不同线程之间的同步手段。<br />
 5. 信号：信号是一种比较复杂的通信方式，用户通知接收进程某个事件已经发生。<br />
 6. 共享内存：共享内存就是映射一段能被其他进程所访问的内存，由一个进程创建，但多个进程哭访问，这是最快的IPC方式，通常可以与其他通信机制配合使用，来实现进程间通信和同步。<br />
-7. 套接字通信：通过socket来同学，可用于不同机器间的进程间通信。<br />
+7. 套接字通信：通过socket来通信，可用于不同机器间的进程间通信。<br />
 容器内部进程间通信对于宿主机来说，实际上是具有相同PID namespace中的进程间通信，它由一个唯一的32位ID的标识符来进行区别，每个IPC资源都对应了一个这样的ID。IPC namespace实际上是包含了系统IPC标识符和实现POSIX消息队列的文件系统，一个IPC namespace下的进程相互可见，不同的namespace下进程互相不可见。<br />
 
 ### PID namespace：
@@ -48,7 +48,7 @@ namespace的API包括**clone()**、**setns()**以及**unshare()**，还有/proc�
 
 **注意点：**<br />
 1. PID namespace中的init进程拥有信号屏蔽特权，如果init中没有写处理某个信号的代码逻辑，那么与init同一个PID namespace下的所有进程发送给他的信号都会被屏蔽，防止被误杀。父节点发送的信号如果不是SIGKILL（销毁进程）或SIGSTOP（暂停进程）也会被忽略，但如果父节点发送上述两个信号，子节点的init会强制执行，父节点有权终止子节点中的进程。<br />
-2. unshare（）和unset（）只有在创建PID namespace时不会直接进入新的namespace，创建其他namespace时都会直接进入。unshare（）允许用户在原有进程执行namespace隔离，但创建PID namespace后，原进程并不会进入新的PID namespace中，接下来创建的子进程才会进入新的namespace并成为这个namespace的init进程。setns（）和unshare（）类似，调用者进程不会进入新的namespace，而随后创建的子进程将会以init进程的身份进入。<br />
+2. unshare（）和setns（）：只有在创建PID namespace时不会直接进入新的namespace，创建其他namespace时都会直接进入。unshare（）允许用户在原有进程执行namespace隔离，但创建PID namespace后，原进程并不会进入新的PID namespace中，接下来创建的子进程才会进入新的namespace并成为这个namespace的init进程。setns（）和unshare（）类似，调用者进程不会进入新的namespace，而随后创建的子进程将会以init进程的身份进入。<br />
 
 ### Mount namespace：
 
