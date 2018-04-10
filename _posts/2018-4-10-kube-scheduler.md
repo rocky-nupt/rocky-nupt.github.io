@@ -43,18 +43,18 @@ assume将pod的调度信息缓存到本地内存schedulerCache中，因为bind�
 ### priority
 
 * **SelectorSpreadPriority**：属于相同service或者RC的pod在node上均匀分布，权重为1 <br />
-    map：node上有与被调度的pod相同selector的pod就score加1 <br />
-    reduce：MaxPriority（10）*[1/3 *（不同node最大score-当前node的score）/不同node最大score + 2/3 * （不同zone最大score-当前node的score）/不同zone最大score]
+    **map**：node上有与被调度的pod相同selector的pod就score加1 <br />
+    **reduce**：MaxPriority（10）*[1/3 *（不同node最大score-当前node的score）/不同node最大score + 2/3 * （不同zone最大score-当前node的score）/不同zone最大score]
 * **InterPodAffinityPriority**：根据Affinity和Anti-Affinity进行加分减分，权重为1
 * **LeastRequestPriority**：计算node上可分配的cpu和memory的score，权重为1
 * **BalancedResourceAllocation**：计算node上cpu、memory、volume使用率的score，权重为1
 * **NodePreferAvoidPodsPriority**：根据node上"scheduler.alpha.kubernetes.io/preferAvoidPods”的annotation计分，这个annotation会禁止ReplicationController或ReplicaSet的pod调度在其上面，默认权重为10000
 * **NodeAffinityPriority**：根据Affinity计分，权重为1 <br />
-    map：根据pod的Affinity给node加分 <br />
-    reduce：归一化
+    **map**：根据pod的Affinity给node加分 <br />
+    **reduce**：归一化
 * **TaintTolerationPriority**：根据toleration和taints是否匹配计分，权重为1 <br />
-    map：匹配toleration和taints <br />
-    reduce：归一化
+    **map**：匹配toleration和taints <br />
+    **reduce**：归一化
 * **ServiceSpreadingPriority**：属于相同service的pod在node上均匀分布，map、reduce和SelectorSpreadPriority一样，权重为1
 * **EqualPriority**：给所有节点提供相同的权重，权重为1
 * **ImageLocalityPriority**：镜像及其相关依赖优先，map根据node上已有的镜像所需的包的大小计分，reduce为空，权重为1
